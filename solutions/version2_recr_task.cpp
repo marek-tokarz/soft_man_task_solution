@@ -29,30 +29,30 @@ std::vector<int> createResultVector(const std::vector<int>& A, const std::vector
 { 
     std::unordered_map<int, int> sequence; // unordered_map used for its time efficiency
 
-    for (const int& num : B) { // Iterujemy przez każdy element `B`
+    for (const int& num : B) { // iterating a sequence B
     auto it = sequence.find(num);
     if (it != sequence.end()) {
-        it->second += 1; // Zwiększamy wartość w mapie, jeśli klucz już istnieje
+        it->second += 1; // a value is increased if a key already exists
     } else {
-        sequence[num] = 1; // Dodajemy nowy klucz z wartością 1
+        sequence[num] = 1; // adding a new key with value 1 - it means an occcurence of this key is 1 - new key
     }
 }
     
 std::vector<int> C;
 
-for (const int& key : A) { // Iterujemy przez każdy element `A`
+for (const int& key : A) { // iterating a sequence A
     auto it = sequence.find(key);
-    if (it != sequence.end()) { // Jeśli klucz istnieje w mapie
+    if (it != sequence.end()) { // if a specific key already exists in a map 'sequence'
         int value = it->second;
         if (!isPrime(value)) {
-            C.push_back(key); // Dodajemy do wyniku, jeśli liczba wystąpień nie jest liczbą pierwszą
+            C.push_back(key); // then we add that key to the output vector if an occurence number is not a prime number
         }
     } else {
-        C.push_back(key); // Dodajemy, jeśli element nie istnieje w `sequence`
+        C.push_back(key); // if a key was not found in sequence, then we safely can add this to output vector
     }
 }
 
-    return C; // functions returns a sequence C after all given constraints were checked
+    return C; // function returns a vector C after all given constraints were checked
 }
 
 void validateResult(const std::vector<int>& A, const std::vector<int>& B, const std::vector<int>& actual, const std::vector<int>& expected)
