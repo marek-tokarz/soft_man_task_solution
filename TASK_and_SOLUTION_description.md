@@ -98,9 +98,12 @@ I have provided code to test in the same file as the solution of the task for si
 
 There are 6 test cases: one directly from the example and 5 randomly generated.
 
+Another version, a second one was implemented with different approach to tests: test cases were generated manually and each test case has its own expected result. This makes testing more efficient and more robust.
+
 ---
 
 ### 5. SUMMARY
 
-I found two solutions; only the second one was implemented because it had a **significant advantage** in time complexity. This algorithm was implemented and tested. Test output includes prime numbers for reference, so each rejected number's occurrence can be checked within this set of prime numbers.  
+I found two solutions; only the second one was implemented because it had a **significant advantage** in time complexity. This algorithm was implemented and tested. Test output includes prime numbers for reference, so each rejected number's occurrence can be checked within this set of prime numbers.
 Implementation, all the functions, and testing are in one file for simplicity of compiling, executing, and analyzing the test cases.
+After implementing another version, a new directory was created to keep them. Main idea behind second version are manual test cases with their own expected results.

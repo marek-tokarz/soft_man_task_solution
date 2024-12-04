@@ -1,6 +1,6 @@
 # Repository Description
 
-This repository consists of a solution in C++ for a task:
+This repository consists of a two versions of solutions in C++ for a task:
 
 ### TASK:
 
@@ -20,4 +20,4 @@ Example:
 
 ---
 
-The problem requires an efficient algorithm to minimize time complexity, and multiple approaches were considered. The initial algorithm was inefficient due to multiple checks, leading to a more optimized second algorithm using an `unordered_map` for counting occurrences in **B** and checking for prime numbers. The time complexity of the second algorithm is significantly improved. Both solutions were compared, and the final implementation was tested with multiple test cases.
+The problem requires an efficient algorithm to minimize time complexity, and multiple approaches were considered. The initial algorithm was inefficient due to multiple checks, leading to a more optimized second algorithm using an `unordered_map` for counting occurrences in **B** and checking for prime numbers. The time complexity of the second algorithm is significantly improved. Both solutions were compared, and the final implementation was tested with multiple test cases. Another version of solution was implemented - a version with manual tests with generated test cases with expected results.
